@@ -1,12 +1,12 @@
 def insertionSort(params)
-    for i in (1..params.size-1)
-        key = params[i]
-        j = i-1
-        while j >= 0 and params[j] > key 
-            params[j+1] = params[j]
-            j = j-1
+    for j in (1..params.size-1)
+        key = params[j]
+        i = j-1
+        while i >= 0 and params[i] > key 
+            params[i+1] = params[i]
+            i = i-1
         end
-        params[j+1] = key
+        params[i+1] = key
     end
 end
 
